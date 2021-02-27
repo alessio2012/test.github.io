@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Il sistema solare</title>
+        <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+        <meta name="author" content="Vincent Garreau" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" media="screen" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <!-- count particles -->
+
+
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+        <div id="navbar">
+            <a href="#home"><img src="img/home.png" width="18px"; height="18px"></a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+          </div>
+        
+          <div id="section1">
+            <span style="font-size: 50px; position: relative; bottom: 500px; left: 600px; font-family: 'Londrina Solid', cursive; color: white; font-weight: bold; z-index: 2;"> “L'universo è fatto di storie, non di atomi” </span>
+            <span style="font-size: 40px; position: relative; bottom: 450px; left: 50px; font-family: 'Londrina Solid', cursive; color: white; z-index: 2;"> il sistema solare </span>
+          </div>
+
+          <a href="#section2"> <img src="img/arrow.png" style="position: relative; top: -100px; width: 35px; height: 35px; left: 960px;" ></a>
+
+          <div>
+              <span id="section2">
+                   LOREM IPSUM LOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM <br> 
+                   LOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM <br> 
+                   LOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM <br>
+                   LOREM IPSUM LOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM <br> 
+              </span>
+          </div>
+          <script>
+          // When the user scrolls down 20px from the top of the document, slide down the navbar
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("navbar").style.top = "0";
+            } else {
+              document.getElementById("navbar").style.top = "-50px";
+            }
+          }
+          </script>
+        <!-- scripts -->
+        <script src="particles.js"></script>
+        <script src="js/app.js"></script>
+
+        <!-- stats.js -->
+        <script src="js/lib/stats.js"></script>
+    </body>
+</html>
